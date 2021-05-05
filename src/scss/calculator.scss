@@ -1,0 +1,32 @@
+.calculator {
+  padding: 16px;
+  background-color: $white;
+
+  &__annotation {
+    padding: 7px 16px 14px 17px;
+    border-left: 4px solid $main;
+    
+    &--wrap {
+      margin: 16px 0;
+      background-color: $white;
+      border-radius: 5px;
+      padding: 5px 0;
+
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: calc(100% - 10px);
+      background-color: $main;
+      left: 0;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

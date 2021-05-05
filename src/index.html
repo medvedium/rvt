@@ -9,6 +9,97 @@
 </head>
 
 <body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Логотип" class="logo__img">
+    </a>
+    <div class="header__button--wrap">
+      <div class="header__button header__button--search ">
+        <img src="img/search.svg" alt="" class="button__search--icon">
+      </div>
+      <div class="header__button burger">
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="calculator__annotation--wrap">
+      <div class="calculator__annotation">
+        Воспользуйтесь нашим кальулятором, чтобы проссчитать примерную стоимость вашего ремонта. Калькулятор считает
+        среднюю цену на основе прайсов всех предствленных в рейтинге компаний. Не стоит доверять компаниям, которые
+        указывают цену от 1500 за квадратный метр...
+      </div>
+    </div>
+
+    <section class="calculator">
+
+      <h1 class="calculator__title">Калькулятор ремонта</h1>
+
+      <form action="#" id="calculator__form">
+        <label for="">Тип помещения:</label>
+        <select name="" id="">
+          <option value="">Новостройка</option>
+          <option value="">Вторичка</option>
+        </select>
+
+        <label for="">Площадь ремонта:</label>
+        <input type="text">
+        <input type="range" min="1" max="300">
+
+        <label for="">Электрика:</label>
+        <select name="" id="">
+          <option value="">Нет</option>
+          <option value="">Да</option>
+        </select>
+        <label for="">Тип лектрики:</label>
+        <select name="" id="">
+          <option value="">Частичная замена и подключение</option>
+          <option value="">Новая от вводного кабеля</option>
+        </select>
+
+        <label for="">Общий периметр стен:</label>
+        <input type="text">
+
+        <label for="">Тип ремонта:</label>
+        <select name="" id="">
+          <option value="">Дизайнерский</option>
+          <option value="">Косметический</option>
+          <option value="">Капитальный</option>
+        </select>
+
+        <label for="">Потолки:</label>
+        <select name="" id="">
+          <option value="">Гипсокартон</option>
+          <option value="">Натяжной</option>
+          <option value="">2-уровня гиспокартон</option>
+        </select>
+
+        <label for="">Ремонт санузла:</label>
+        <select name="" id="">
+          <option value="">Нет</option>
+          <option value="">Да</option>
+        </select>
+        <label for="">Площадь санузла:</label>
+        <input type="text">
+        <input type="range" min="1" max="20">
+
+        <label for="">Теплые полы:</label>
+        <select name="" id="">
+          <option value="">Нет</option>
+          <option value="">Да</option>
+        </select>
+
+        <label for="">Двери:</label>
+        <select name="" id="">
+          <option value="">Нет</option>
+          <option value="">Да</option>
+        </select>
+        <input type="number">
+
+      </form>
+    </section>
+  </main>
   <script src="js/script.min.js"></script>
 </body>
 
