@@ -10,7 +10,10 @@ let flatType = document.querySelector('#flatType'),
   toiletSquareRange = document.querySelector('#toiletSquareRange'),
   floor = document.querySelector('#floor'),
   doors = document.querySelector('#doors'),
-  total = document.querySelector('#total');
+  total = document.querySelector('#total'),
+  burger = document.querySelector('.burger'),
+  mobileClose = document.querySelector('.mobile__close'),
+  mobileMenu = document.querySelector('.mobile-menu');
 
 let result;
 let render = function () {
@@ -85,3 +88,10 @@ doors.addEventListener('change', () => {
 });
 
 
+burger.addEventListener('click', () => {
+  mobileMenu.classList.add('is__active');
+});
+mobileClose.addEventListener('click', () => {
+  mobileMenu.classList.remove('is__active');
+
+});
