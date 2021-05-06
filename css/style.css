@@ -519,7 +519,6 @@ body {
 #calculator__form input[type="number"],
 #calculator__form select {
   width: 100%;
-  max-width: 318px;
   height: 50px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
@@ -530,7 +529,6 @@ body {
 
 #calculator__form input[type=range] {
   width: 100%;
-  max-width: 318px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -604,6 +602,8 @@ body {
   background-color: #347DB8;
   text-align: center;
   padding: 13px 40px 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .form__price {
