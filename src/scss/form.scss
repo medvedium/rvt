@@ -2,13 +2,65 @@
   display: flex;
   flex-direction: column;
 
-  & input, select {
+  & input[type="text"], input[type="number"], select {
+    width: 100%;
     max-width: 318px;
     height: 50px;
     border: 1px solid $border;
     border-radius: 5px;
-
     padding: 0 10px 0 17px;
+    background-color: $white;
+    color: $form-input;
+  }
+
+  input[type=range]  {
+    width: 100%;
+    max-width: 318px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 1px;
+    margin-top: -1px;
+    background-image: linear-gradient(90deg, $transparent 5px, $main 5px, $main calc(100% - 5px), $transparent calc(100% - 5px));
+  }
+  input[type=range]::-webkit-slider-thumb {
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    margin-top: -10px;
+    box-shadow: 0px 2px 2px $range-shadow;
+  }
+
+  input[type=range]::-moz-range-track {
+    height: 1px;
+    margin-top: -1px;
+    background-image: linear-gradient(90deg, $white 5px, $main 5px, $main calc(100% - 5px), $white calc(100% - 5px));
+  }
+
+  input[type=range]::-moz-range-thumb {
+    background: $white;
+    border: 1px solid $border;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    margin-top: -10px;
+    box-shadow: 0px 2px 2px $range-shadow;
+  }
+  
+  & select {
+    appearance: none;
+    position: relative;
+    background-image: url(../img/dropdown.svg), url(../img/dropdown-bg.svg);
+    background-position: calc(100% - 17px) calc(1em + 7px),calc(100% - 6px) calc(1em + -5px);
+    background-repeat: no-repeat;
   }
 
   & label {
@@ -18,4 +70,28 @@
     margin-bottom: 7px;
     margin-top: 18px;
   }
+
+}
+.form {
+  &__disclaimer {
+    background-color: $white;
+    text-align: center;
+    padding-top: 25px;
+  }
+  &__result {
+    color: $white;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: $background-result;
+    text-align: center;
+    padding: 13px 40px 20px;
+  }
+  &__price {
+    margin-left: 20px;
+    font-weight: 700;
+  }
+}
+
+.required {
+  color: $required;
 }

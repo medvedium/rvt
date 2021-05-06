@@ -37,60 +37,60 @@
       <h1 class="calculator__title">Калькулятор ремонта</h1>
 
       <form action="#" id="calculator__form">
-        <label for="">Тип помещения:</label>
-        <select name="" id="">
+        <label for="flatType">Тип помещения:<span class="required">*</span></label>
+        <select name="flatType" id="flatType">
           <option value="">Новостройка</option>
           <option value="">Вторичка</option>
         </select>
 
-        <label for="">Площадь ремонта:</label>
-        <input type="text">
-        <input type="range" min="1" max="300">
+        <label for="square">Площадь ремонта:<span class="required">*</span></label>
+        <input type="text" name="square" id="square">
+        <input type="range" min="1" max="300" value="140" step="1">
 
-        <label for="">Электрика:</label>
+        <label for="electricity">Электрика:<span class="required">*</span></label>
+        <select name="electricity" id="electricity">
+          <option value="electricityYes">Нет</option>
+          <option value="electricityNo">Да</option>
+        </select>
+        <label for="electricity">Тип лектрики:<span class="required">*</span></label>
+        <select name="electricity" id="electricity">
+          <option value="electricityPart">Частичная замена и подключение</option>
+          <option value="electricityNew">Новая от вводного кабеля</option>
+        </select>
+
+        <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
+        <input type="text" name="perimetr" id="perimetr">
+
+        <label for="fixType">Тип ремонта:<span class="required">*</span></label>
+        <select name="fixType" id="fixType">
+          <option value="fixDesign">Дизайнерский</option>
+          <option value="fixCosmetic">Косметический</option>
+          <option value="fixCapital">Капитальный</option>
+        </select>
+
+        <label for="roof">Потолки:<span class="required">*</span></label>
+        <select name="roof" id="roof">
+          <option value="roof1">Гипсокартон</option>
+          <option value="roof2">Натяжной</option>
+          <option value="roof3">2-уровня гиспокартон</option>
+        </select>
+
+        <label for="">Ремонт санузла:<span class="required">*</span></label>
         <select name="" id="">
           <option value="">Нет</option>
           <option value="">Да</option>
         </select>
-        <label for="">Тип лектрики:</label>
-        <select name="" id="">
-          <option value="">Частичная замена и подключение</option>
-          <option value="">Новая от вводного кабеля</option>
-        </select>
-
-        <label for="">Общий периметр стен:</label>
+        <label for="">Площадь санузла:<span class="required">*</span></label>
         <input type="text">
+        <input type="range" min="1" max="20" value="10" step="1">
 
-        <label for="">Тип ремонта:</label>
-        <select name="" id="">
-          <option value="">Дизайнерский</option>
-          <option value="">Косметический</option>
-          <option value="">Капитальный</option>
-        </select>
-
-        <label for="">Потолки:</label>
-        <select name="" id="">
-          <option value="">Гипсокартон</option>
-          <option value="">Натяжной</option>
-          <option value="">2-уровня гиспокартон</option>
-        </select>
-
-        <label for="">Ремонт санузла:</label>
-        <select name="" id="">
-          <option value="">Нет</option>
-          <option value="">Да</option>
-        </select>
-        <label for="">Площадь санузла:</label>
-        <input type="text">
-        <input type="range" min="1" max="20">
-
-        <label for="">Теплые полы:</label>
+        <label for="">Теплые полы:<span class="required">*</span></label>
         <select name="" id="">
           <option value="">Нет</option>
           <option value="">Да</option>
         </select>
 
-        <label for="">Двери:</label>
+        <label for="">Двери:<span class="required">*</span></label>
         <select name="" id="">
           <option value="">Нет</option>
           <option value="">Да</option>
@@ -98,7 +98,20 @@
         <input type="number">
 
       </form>
+
+      <div class="form__disclaimer">
+        *Напоминаем, что это примерная стоимость
+      </div>
     </section>
+
+    <div class="form__result">
+      <p>
+        Стоимость вашего ремонта
+      </p>
+      <p>
+        Итого: <span class="form__price"><span id="total">0</span> руб.</span>
+      </p>
+    </div>
   </main>
   <script src="js/script.min.js"></script>
 </body>
