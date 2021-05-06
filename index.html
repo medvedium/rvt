@@ -39,23 +39,19 @@
       <form action="#" id="calculator__form">
         <label for="flatType">Тип помещения:<span class="required">*</span></label>
         <select name="flatType" id="flatType">
-          <option value="flatNew">Новостройка</option>
-          <option value="flatSecond">Вторичка</option>
+          <option value="8500">Вторичка</option>
+          <option value="6000">Новостройка</option>
         </select>
 
         <label for="square">Площадь ремонта:<span class="required">*</span></label>
-        <input type="text" name="square" id="square">
-        <input type="range" min="1" max="300" value="140" step="1">
+        <input type="text" name="square" id="square" value="">
+        <input type="range" min="1" max="300" value="140" step="1" name="squareRange" id="squareRange">
 
         <label for="electricity">Электрика:<span class="required">*</span></label>
         <select name="electricity" id="electricity">
-          <option value="electricityYes">Нет</option>
-          <option value="electricityNo">Да</option>
-        </select>
-        <label for="electricity">Тип лектрики:<span class="required">*</span></label>
-        <select name="electricity" id="electricity">
-          <option value="electricityPart">Частичная замена и подключение</option>
-          <option value="electricityNew">Новая от вводного кабеля</option>
+          <option value="0">Нет</option>
+          <option value="300">Частичная замена и подключение</option>
+          <option value="600">Новая от вводного кабеля</option>
         </select>
 
         <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
@@ -63,45 +59,54 @@
 
         <label for="fixType">Тип ремонта:<span class="required">*</span></label>
         <select name="fixType" id="fixType">
-          <option value="fixDesign">Дизайнерский</option>
-          <option value="fixCosmetic">Косметический</option>
-          <option value="fixCapital">Капитальный</option>
+          <option value="3000">Дизайнерский</option>
+          <option value="0">Косметический</option>
+          <option value="1500">Капитальный</option>
         </select>
 
         <label for="roof">Потолки:<span class="required">*</span></label>
         <select name="roof" id="roof">
-          <option value="roof1">Гипсокартон</option>
-          <option value="roof2">Натяжной</option>
-          <option value="roof3">2-уровня гиспокартон</option>
+          <option value="300">Гипсокартон</option>
+          <option value="450">Натяжной</option>
+          <option value="600">2-уровня гиспокартон</option>
         </select>
 
-        <label for="">Ремонт санузла:<span class="required">*</span></label>
-        <select name="" id="">
-          <option value="">Нет</option>
-          <option value="">Да</option>
+        <label for="toilet">Ремонт санузла:<span class="required">*</span></label>
+        <select name="toilet" id="toilet">
+          <option value="0">Нет</option>
+          <option value="13000">Да</option>
         </select>
-        <label for="">Площадь санузла:<span class="required">*</span></label>
-        <input type="text">
-        <input type="range" min="1" max="20" value="10" step="1">
+        <label for="toiletSquare" id="toiletSquareLabel" class="">Площадь санузла:<span
+            class="required">*</span></label>
+        <input type="text" name="toiletSquare" id="toiletSquare">
+        <input type="range" min="1" max="20" value="10" step="1" name="toiletSquareRange" id="toiletSquareRange">
 
-        <label for="">Теплые полы:<span class="required">*</span></label>
-        <select name="" id="">
-          <option value="">Нет</option>
-          <option value="">Да</option>
+        <label for="floor">Теплые полы:<span class="required">*</span></label>
+        <select name="floor" id="floor">
+          <option value="0">Нет</option>
+          <option value="200">Да</option>
         </select>
 
-        <label for="">Двери:<span class="required">*</span></label>
-        <select name="" id="">
-          <option value="">Нет</option>
-          <option value="">Да</option>
+        <label for="doors">Двери:<span class="required">*</span></label>
+        <select name="doors" id="doors">
+          <option value="0">Нет</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
         </select>
-        <input type="number">
 
-      </form>
 
-      <div class="form__disclaimer">
-        *Напоминаем, что это примерная стоимость
-      </div>
+
+        <div class="form__disclaimer">
+          *Напоминаем, что это примерная стоимость
+        </div>
     </section>
 
     <div class="form__result">
@@ -113,7 +118,7 @@
       </p>
     </div>
   </main>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

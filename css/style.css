@@ -395,6 +395,14 @@ body {
   font-size: 14px;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .header {
   height: 44px;
   display: -webkit-box;
@@ -587,6 +595,10 @@ body {
   color: #989898;
   margin-bottom: 7px;
   margin-top: 18px;
+}
+
+#calculator__form .chkbx-toggle {
+  display: none;
 }
 
 .form__disclaimer {
