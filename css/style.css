@@ -515,7 +515,8 @@ body {
           flex-direction: column;
 }
 
-#calculator__form input,
+#calculator__form input[type="text"],
+#calculator__form input[type="number"],
 #calculator__form select {
   width: 100%;
   max-width: 318px;
@@ -523,6 +524,63 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   padding: 0 10px 0 17px;
+  background-color: #fff;
+  color: #666666;
+}
+
+#calculator__form input[type=range] {
+  width: 100%;
+  max-width: 318px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#calculator__form input[type=range]::-webkit-slider-runnable-track {
+  height: 1px;
+  margin-top: -1px;
+  background-image: linear-gradient(90deg, transparent 5px, #4496f6 5px, #4496f6 calc(100% - 5px), transparent calc(100% - 5px));
+}
+
+#calculator__form input[type=range]::-webkit-slider-thumb {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#calculator__form input[type=range]::-moz-range-track {
+  height: 1px;
+  margin-top: -1px;
+  background-image: linear-gradient(90deg, #fff 5px, #4496f6 5px, #4496f6 calc(100% - 5px), #fff calc(100% - 5px));
+}
+
+#calculator__form input[type=range]::-moz-range-thumb {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#calculator__form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  background-image: url(../img/dropdown.svg), url(../img/dropdown-bg.svg);
+  background-position: calc(100% - 17px) calc(1em + 7px), calc(100% - 6px) calc(1em + -5px);
+  background-repeat: no-repeat;
 }
 
 #calculator__form label {
@@ -551,4 +609,8 @@ body {
 .form__price {
   margin-left: 20px;
   font-weight: 700;
+}
+
+.required {
+  color: #D22E2E;
 }
