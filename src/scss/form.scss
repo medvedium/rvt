@@ -4,7 +4,6 @@
 
   & input[type="text"], input[type="number"], select {
     width: 100%;
-    max-width: 318px;
     height: 50px;
     border: 1px solid $border;
     border-radius: 5px;
@@ -15,7 +14,6 @@
 
   input[type=range]  {
     width: 100%;
-    max-width: 318px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -71,7 +69,14 @@
     margin-top: 18px;
   }
 
+  .chkbx-toggle {
+    display: none;
+  }
+
 }
+
+
+
 .form {
   &__disclaimer {
     background-color: $white;
@@ -85,6 +90,8 @@
     background-color: $background-result;
     text-align: center;
     padding: 13px 40px 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   &__price {
     margin-left: 20px;
@@ -95,3 +102,7 @@
 .required {
   color: $required;
 }
+
+
+
+
