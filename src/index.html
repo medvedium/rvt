@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Тестовое задание</title>
 </head>
 
@@ -66,55 +66,83 @@
         <h1 class="calculator__title">Калькулятор ремонта</h1>
 
         <form action="#" id="calculator__form">
-          <label for="flatType">Тип помещения:<span class="required">*</span></label>
-          <select name="flatType" id="flatType">
-            <option value="8500">Вторичка</option>
-            <option value="6000">Новостройка</option>
-          </select>
 
-          <label for="square">Площадь ремонта:<span class="required">*</span></label>
-          <input type="text" name="square" id="square" value="">
-          <input type="range" min="1" max="300" value="140" step="1" name="squareRange" id="squareRange">
+          <div class="input-group">
+            <div class="input__wrap">
+              <label for="flatType">Тип помещения:<span class="required">*</span></label>
+              <select name="flatType" id="flatType">
+                <option value="8500">Вторичка</option>
+                <option value="6000">Новостройка</option>
+              </select>
+            </div>
 
-          <label for="electricity">Электрика:<span class="required">*</span></label>
-          <select name="electricity" id="electricity">
-            <option value="0">Нет</option>
-            <option value="300">Частичная замена и подключение</option>
-            <option value="600">Новая от вводного кабеля</option>
-          </select>
+            <div class="input__wrap">
+              <label for="square">Площадь ремонта:<span class="required">*</span></label>
+              <input type="text" name="square" id="square" value="">
+              <input type="range" min="1" max="300" value="140" step="1" name="squareRange" id="squareRange">
+            </div>
+          </div>
 
-          <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
-          <input type="text" name="perimetr" id="perimetr">
+          <div class="input-group">
+            <div class="input__wrap">
+              <label for="electricity">Электрика:<span class="required">*</span></label>
+              <select name="electricity" id="electricity">
+                <option value="0">Нет</option>
+                <option value="300">Частичная замена и подключение</option>
+                <option value="600">Новая от вводного кабеля</option>
+              </select>
+            </div>
+            <div class="input__wrap">
+              <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
+              <input type="text" name="perimetr" id="perimetr">
+            </div>
+          </div>
 
-          <label for="fixType">Тип ремонта:<span class="required">*</span></label>
-          <select name="fixType" id="fixType">
-            <option value="3000">Дизайнерский</option>
-            <option value="0">Косметический</option>
-            <option value="1500">Капитальный</option>
-          </select>
+          <div class="input-group">
+            <div class="input__wrap">
+              <label for="fixType">Тип ремонта:<span class="required">*</span></label>
+              <select name="fixType" id="fixType">
+                <option value="3000">Дизайнерский</option>
+                <option value="0">Косметический</option>
+                <option value="1500">Капитальный</option>
+              </select>
+            </div>
 
-          <label for="roof">Потолки:<span class="required">*</span></label>
-          <select name="roof" id="roof">
-            <option value="300">Гипсокартон</option>
-            <option value="450">Натяжной</option>
-            <option value="600">2-уровня гиспокартон</option>
-          </select>
+            <div class="input__wrap">
+              <label for="roof">Потолки:<span class="required">*</span></label>
+              <select name="roof" id="roof">
+                <option value="300">Гипсокартон</option>
+                <option value="450">Натяжной</option>
+                <option value="600">2-уровня гиспокартон</option>
+              </select>
+            </div>
+          </div>
 
-          <label for="toilet">Ремонт санузла:<span class="required">*</span></label>
-          <select name="toilet" id="toilet">
-            <option value="0">Нет</option>
-            <option value="13000">Да</option>
-          </select>
-          <label for="toiletSquare" id="toiletSquareLabel" class="">Площадь санузла:<span
-              class="required">*</span></label>
-          <input type="text" name="toiletSquare" id="toiletSquare">
-          <input type="range" min="1" max="20" value="10" step="1" name="toiletSquareRange" id="toiletSquareRange">
+          <div class="input-group">
+            <div class="input__wrap">
+              <label for="toilet">Ремонт санузла:<span class="required">*</span></label>
+              <select name="toilet" id="toilet">
+                <option value="0">Нет</option>
+                <option value="13000">Да</option>
+              </select>
+            </div>
+            <div class="input__wrap">
+              <label for="toiletSquare" id="toiletSquareLabel" class="">Площадь санузла:<span
+                  class="required">*</span></label>
+              <input type="text" name="toiletSquare" id="toiletSquare">
+              <input type="range" min="1" max="20" value="10" step="1" name="toiletSquareRange" id="toiletSquareRange">
+            </div>
+          </div>
 
-          <label for="floor">Теплые полы:<span class="required">*</span></label>
-          <select name="floor" id="floor">
-            <option value="0">Нет</option>
-            <option value="200">Да</option>
-          </select>
+          <div class="input-group">
+            <div class="input__wrap">
+              <label for="floor">Теплые полы:<span class="required">*</span></label>
+              <select name="floor" id="floor">
+                <option value="0">Нет</option>
+                <option value="200">Да</option>
+              </select>
+            </div>
+          </div>
 
           <div class="doors-row">
             <div class="doors">
@@ -168,34 +196,34 @@
       <ul class="aside__list">
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
         <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
               alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
-              Сервис</span></a><span class="list__score">2700</span></li>
+              Сервис</span></a><span class="list__score">2700&nbsp;<span class="list__point">баллов</span></span></li>
       </ul>
     </aside>
   </div>

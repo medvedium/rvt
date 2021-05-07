@@ -36,4 +36,11 @@
   .calculator__annotation {
     width: 100%;
   }
+
+  .calculator {
+    padding: 40px 24px 24px;
+    &__title {
+      font-size: 22px;
+    }
+  }
 }
