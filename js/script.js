@@ -10,6 +10,7 @@ let flatType = document.querySelector('#flatType'),
   toiletSquareRange = document.querySelector('#toiletSquareRange'),
   floor = document.querySelector('#floor'),
   doors = document.querySelector('#doors'),
+  enterDoor = document.querySelector('#enterDoor'),
   total = document.querySelector('#total'),
   burger = document.querySelector('.burger'),
   mobileClose = document.querySelector('.mobile__close'),
@@ -31,9 +32,16 @@ let render = function () {
   square.value = `${squareRange.value} кв. м`;
   toiletSquare.value = `${toiletSquareRange.value} кв. м`;
 
-  result = a * s + b * s + c * s + d * s + e * s + f * ts + g * 8500;
 
-  console.log(result);
+  if (enterDoor.checked) {
+    result = a * s + b * s + c * s + d * s + e * s + f * ts + g * 8500;
+  } else {
+    result = a * s + b * s + c * s + d * s + e * s + f * ts + g * 8500;
+    let resultWithDoor;
+    let enterDoorValue = +enterDoor.value;
+    resultWithDoor = result * enterDoorValue;
+    result += resultWithDoor;
+  }
   total.innerHTML = result;
 };
 render();
@@ -85,6 +93,9 @@ floor.addEventListener('change', () => {
   render();
 });
 doors.addEventListener('change', () => {
+  render();
+});
+enterDoor.addEventListener('change', () => {
   render();
 });
 
