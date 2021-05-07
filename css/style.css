@@ -403,6 +403,10 @@ body {
   display: block;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .header {
   height: 44px;
   position: relative;
