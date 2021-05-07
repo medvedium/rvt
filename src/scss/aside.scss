@@ -6,8 +6,10 @@
   margin-top: 14px;
   align-self: flex-start;
   padding: 20px 4px 16px;
-
-  flex-basis: 22.5%;
+  width: 100%;
+  min-width: 198px;
+  max-width: 250px;
+  // flex-basis: 22.5%;
 
   &__title {
     display: inline-block;
@@ -32,11 +34,23 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 8px;
+      font-size: 10px;
+      font-weight: 400;
     }
-    &__text {
+    &__link {
+      display: flex;
+      align-items: center;
+
+      color: $text;
+      text-decoration: none;
+
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
     &__score {
       padding: 4px;
@@ -54,6 +68,11 @@
   .aside {
     display: flex;
     flex-direction: column;
-    // max-width: 162px;
+  }
+}
+
+@media (min-width: 991px) {
+  .aside {
+    max-width: 100%;
   }
 }

@@ -12,6 +12,10 @@ body {
   box-sizing: inherit;
 }
 
+main {
+  max-width: 843px;
+}
+
 .hide {
   display: none;
 }
@@ -30,5 +34,8 @@ body {
     padding: 8px 24px 24px;
 
     flex-basis: 74%;
+
+    max-width: 1281px;
+    margin: 0 auto;
   }
 }

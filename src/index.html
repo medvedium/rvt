@@ -5,48 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Gulp</title>
+  <title>Тестовое задание</title>
 </head>
 
 <body>
-  <header class="header">
-    <a href="index.html" class="logo">
-      <img src="img/logo.svg" alt="Логотип" class="logo__img">
-    </a>
-    <div class="search-bar">
-      <div class="search-bar__icon">
-        <img src="img/Search icon.svg" alt="">
-      </div>
-      <input type="text" class="search-bar__field" placeholder="Введите название компании...">
-    </div>
-    <div class="header__button--wrap">
-      <div class="header__button header__button--search ">
-        <img src="img/search.svg" alt="" class="button__search--icon">
-      </div>
-      <div class="header__button burger">
-        <span class="burger__line"></span>
-      </div>
-    </div>
-    <nav class="mobile-menu">
-      <a href="index.html" class="logo__mobile">
-        <img src="img/logo.svg" alt="Логотип" class="logo__img--mobile">
+  <div class="header__wrap">
+    <header class="header mobile-header">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Логотип" class="logo__img">
       </a>
-      <a href="#" class="add-company">
-        Добавить компанию +
-      </a>
-      <ul class="menu__list">
-        <li class="menu__item"><a href="3">Ремонт квартир</a></li>
-        <li class="menu__item"><a href="#">Дизайн интерьеров</a></li>
-        <li class="menu__item"><a href="#">Карта компаний</a></li>
-        <li class="menu__item"><a href="#">Последние отзывы</a></li>
-        <li class="menu__item"><a href="#"><img src="img/calculator.svg" alt="Иконка калькулятора"> Калькулятор
-            ремонта</a></li>
-      </ul>
-      <div class="mobile__close">
-        <img src="img/close.svg" alt="">
+      <div class="search-bar">
+        <div class="search-bar__icon">
+          <img src="img/Search icon.svg" alt="">
+        </div>
+        <input type="text" class="search-bar__field" placeholder="Введите название компании...">
       </div>
-    </nav>
-  </header>
+      <div class="header__button--wrap">
+        <div class="header__button header__button--search ">
+          <img src="img/search.svg" alt="" class="button__search--icon">
+        </div>
+        <div class="header__button burger">
+          <span class="burger__line"></span>
+        </div>
+      </div>
+      <nav class="mobile-menu">
+        <a href="index.html" class="logo__mobile">
+          <img src="img/logo.svg" alt="Логотип" class="logo__img--mobile">
+        </a>
+        <a href="#" class="add-company">
+          Добавить компанию +
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="3">Ремонт квартир</a></li>
+          <li class="menu__item"><a href="#">Дизайн интерьеров</a></li>
+          <li class="menu__item"><a href="#">Карта компаний</a></li>
+          <li class="menu__item"><a href="#">Последние отзывы</a></li>
+          <li class="menu__item"><a href="#"><img src="img/calculator.svg" alt="Иконка калькулятора"> Калькулятор
+              ремонта</a></li>
+        </ul>
+        <div class="mobile__close">
+          <img src="img/close.svg" alt="">
+        </div>
+      </nav>
+    </header>
+
+  </div>
 
   <div class="page-container">
     <main>
@@ -163,26 +166,36 @@
       <h2 class="aside__title">Лучшие компании по ремонту</h2>
 
       <ul class="aside__list">
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
-        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
-            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
+        <li class="list__item"><a href="#" class="list__link"><img src="img/company-icon.png"
+              alt="Строй Комплект Сервис" class="list__icon"><span class="list__text">Строй Комплект
+              Сервис</span></a><span class="list__score">2700</span></li>
       </ul>
     </aside>
   </div>

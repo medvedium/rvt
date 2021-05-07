@@ -7,15 +7,21 @@
 
   padding: 0 16px;
   border-bottom: 1px solid $background-secondary;
-
   background-color: $white;
+
+  max-width: 1281px;
+  margin: 0 auto;
+
+  &__wrap {
+    background: $white;
+  }
 
   &__button {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2px;
-    
+
     background-color: #fafafa;
 
     width: 32px;
@@ -39,35 +45,33 @@
   cursor: pointer;
   &__line {
     background-color: $main;
-    
+
     display: block;
     position: relative;
-    
+
     width: 15px;
     height: 2px;
-    
+
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 15px;
       height: 2px;
       top: -4px;
-      
-      background-color: $main;
 
+      background-color: $main;
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 15px;
       height: 2px;
       bottom: -4px;
-      
-      background-color: $main;
 
+      background-color: $main;
     }
   }
 }
@@ -118,4 +122,7 @@
       padding-left: 10px;
     }
   }
+}
+
+@media (min-width: 991px) {
 }
