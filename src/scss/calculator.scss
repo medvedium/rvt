@@ -5,6 +5,8 @@
   &__annotation {
     padding: 7px 16px 14px 17px;
     border-left: 4px solid $main;
+    max-width: 534px;
+    line-height: 22px;
     
     &--wrap {
       margin: 16px 0;
@@ -28,5 +30,12 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calculator, .calculator__annotation {
+    width: 100%;
+    max-width: 534px;
   }
 }

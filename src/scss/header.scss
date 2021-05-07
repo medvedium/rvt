@@ -71,3 +71,51 @@
     }
   }
 }
+
+.search-bar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 70px;
+  }
+
+  .header__button--search {
+    display: none;
+  }
+
+  .logo__img {
+    width: 209px;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    min-width: 348px;
+    height: 38px;
+    overflow: hidden;
+    border: $search-bar-border;
+
+    &__icon {
+      background-color: $background-search;
+      height: 100%;
+      width: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: $search-icon-border;
+    }
+
+    &__field {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background-color: $background-secondary;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+  }
+}

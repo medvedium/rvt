@@ -13,6 +13,12 @@
     <a href="index.html" class="logo">
       <img src="img/logo.svg" alt="Логотип" class="logo__img">
     </a>
+    <div class="search-bar">
+      <div class="search-bar__icon">
+        <img src="img/Search icon.svg" alt="">
+      </div>
+      <input type="text" class="search-bar__field" placeholder="Введите название компании...">
+    </div>
     <div class="header__button--wrap">
       <div class="header__button header__button--search ">
         <img src="img/search.svg" alt="" class="button__search--icon">
@@ -42,101 +48,142 @@
     </nav>
   </header>
 
-  <main>
-    <div class="calculator__annotation--wrap">
-      <div class="calculator__annotation">
-        Воспользуйтесь нашим кальулятором, чтобы проссчитать примерную стоимость вашего ремонта. Калькулятор считает
-        среднюю цену на основе прайсов всех предствленных в рейтинге компаний. Не стоит доверять компаниям, которые
-        указывают цену от 1500 за квадратный метр...
-      </div>
-    </div>
-
-    <section class="calculator">
-
-      <h1 class="calculator__title">Калькулятор ремонта</h1>
-
-      <form action="#" id="calculator__form">
-        <label for="flatType">Тип помещения:<span class="required">*</span></label>
-        <select name="flatType" id="flatType">
-          <option value="8500">Вторичка</option>
-          <option value="6000">Новостройка</option>
-        </select>
-
-        <label for="square">Площадь ремонта:<span class="required">*</span></label>
-        <input type="text" name="square" id="square" value="">
-        <input type="range" min="1" max="300" value="140" step="1" name="squareRange" id="squareRange">
-
-        <label for="electricity">Электрика:<span class="required">*</span></label>
-        <select name="electricity" id="electricity">
-          <option value="0">Нет</option>
-          <option value="300">Частичная замена и подключение</option>
-          <option value="600">Новая от вводного кабеля</option>
-        </select>
-
-        <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
-        <input type="text" name="perimetr" id="perimetr">
-
-        <label for="fixType">Тип ремонта:<span class="required">*</span></label>
-        <select name="fixType" id="fixType">
-          <option value="3000">Дизайнерский</option>
-          <option value="0">Косметический</option>
-          <option value="1500">Капитальный</option>
-        </select>
-
-        <label for="roof">Потолки:<span class="required">*</span></label>
-        <select name="roof" id="roof">
-          <option value="300">Гипсокартон</option>
-          <option value="450">Натяжной</option>
-          <option value="600">2-уровня гиспокартон</option>
-        </select>
-
-        <label for="toilet">Ремонт санузла:<span class="required">*</span></label>
-        <select name="toilet" id="toilet">
-          <option value="0">Нет</option>
-          <option value="13000">Да</option>
-        </select>
-        <label for="toiletSquare" id="toiletSquareLabel" class="">Площадь санузла:<span
-            class="required">*</span></label>
-        <input type="text" name="toiletSquare" id="toiletSquare">
-        <input type="range" min="1" max="20" value="10" step="1" name="toiletSquareRange" id="toiletSquareRange">
-
-        <label for="floor">Теплые полы:<span class="required">*</span></label>
-        <select name="floor" id="floor">
-          <option value="0">Нет</option>
-          <option value="200">Да</option>
-        </select>
-
-        <label for="doors">Двери:<span class="required">*</span></label>
-        <select name="doors" id="doors">
-          <option value="0">Нет</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-
-
-
-        <div class="form__disclaimer">
-          *Напоминаем, что это примерная стоимость
+  <div class="page-container">
+    <main>
+      <div class="calculator__annotation--wrap">
+        <div class="calculator__annotation">
+          Воспользуйтесь нашим кальулятором, чтобы проссчитать примерную стоимость вашего ремонта. Калькулятор считает
+          среднюю цену на основе прайсов всех предствленных в рейтинге компаний. Не стоит доверять компаниям, которые
+          указывают цену от 1500 за квадратный метр...
         </div>
-    </section>
+      </div>
 
-    <div class="form__result">
-      <p>
-        Стоимость вашего ремонта
-      </p>
-      <p>
-        Итого: <span class="form__price"><span id="total">0</span> руб.</span>
-      </p>
-    </div>
-  </main>
+      <section class="calculator">
+
+        <h1 class="calculator__title">Калькулятор ремонта</h1>
+
+        <form action="#" id="calculator__form">
+          <label for="flatType">Тип помещения:<span class="required">*</span></label>
+          <select name="flatType" id="flatType">
+            <option value="8500">Вторичка</option>
+            <option value="6000">Новостройка</option>
+          </select>
+
+          <label for="square">Площадь ремонта:<span class="required">*</span></label>
+          <input type="text" name="square" id="square" value="">
+          <input type="range" min="1" max="300" value="140" step="1" name="squareRange" id="squareRange">
+
+          <label for="electricity">Электрика:<span class="required">*</span></label>
+          <select name="electricity" id="electricity">
+            <option value="0">Нет</option>
+            <option value="300">Частичная замена и подключение</option>
+            <option value="600">Новая от вводного кабеля</option>
+          </select>
+
+          <label for="perimetr">Общий периметр стен:<span class="required">*</span></label>
+          <input type="text" name="perimetr" id="perimetr">
+
+          <label for="fixType">Тип ремонта:<span class="required">*</span></label>
+          <select name="fixType" id="fixType">
+            <option value="3000">Дизайнерский</option>
+            <option value="0">Косметический</option>
+            <option value="1500">Капитальный</option>
+          </select>
+
+          <label for="roof">Потолки:<span class="required">*</span></label>
+          <select name="roof" id="roof">
+            <option value="300">Гипсокартон</option>
+            <option value="450">Натяжной</option>
+            <option value="600">2-уровня гиспокартон</option>
+          </select>
+
+          <label for="toilet">Ремонт санузла:<span class="required">*</span></label>
+          <select name="toilet" id="toilet">
+            <option value="0">Нет</option>
+            <option value="13000">Да</option>
+          </select>
+          <label for="toiletSquare" id="toiletSquareLabel" class="">Площадь санузла:<span
+              class="required">*</span></label>
+          <input type="text" name="toiletSquare" id="toiletSquare">
+          <input type="range" min="1" max="20" value="10" step="1" name="toiletSquareRange" id="toiletSquareRange">
+
+          <label for="floor">Теплые полы:<span class="required">*</span></label>
+          <select name="floor" id="floor">
+            <option value="0">Нет</option>
+            <option value="200">Да</option>
+          </select>
+
+          <div class="doors-row">
+            <div class="doors">
+              <label for="doors">Двери:<span class="required">*</span></label>
+              <select name="doors" id="doors">
+                <option value="0">Нет</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="enter-door">
+              <label for="enterDoor">Входная дверь:<span class="required">*</span></label>
+              <!-- <input type="checkbox" id="enterDoor" name="enterDoor" checked value="0.05"> -->
+              <label class="switch">
+                <input type="checkbox" id="enterDoor" name="enterDoor" value="0.05">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+
+
+          <div class="form__disclaimer">
+            *Напоминаем, что это примерная стоимость
+          </div>
+      </section>
+
+      <div class="form__result">
+        <p>
+          Стоимость вашего ремонта
+        </p>
+        <p>
+          Итого: <span class="form__price"><span id="total">0</span> руб.</span>
+        </p>
+      </div>
+    </main>
+
+    <aside class="aside">
+      <h2 class="aside__title">Лучшие компании по ремонту</h2>
+
+      <ul class="aside__list">
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+        <li class="list__item"><img src="img/company-icon.png" alt="Строй Комплект Сервис" class="list__icon"><span
+            class="list__text">Строй Комплект Сервис</span><span class="list__score">2700</span></li>
+      </ul>
+    </aside>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
