@@ -13,7 +13,8 @@ let flatType = document.querySelector('#flatType'),
   total = document.querySelector('#total'),
   burger = document.querySelector('.burger'),
   mobileClose = document.querySelector('.mobile__close'),
-  mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu = document.querySelector('.mobile-menu'),
+  body = document.querySelector('body');
 
 let result;
 let render = function () {
@@ -90,8 +91,10 @@ doors.addEventListener('change', () => {
 
 burger.addEventListener('click', () => {
   mobileMenu.classList.add('is__active');
+  body.classList.add('lock');
+
 });
 mobileClose.addEventListener('click', () => {
   mobileMenu.classList.remove('is__active');
-
+  body.classList.remove('lock');
 });
